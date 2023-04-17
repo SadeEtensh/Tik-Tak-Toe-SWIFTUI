@@ -10,7 +10,20 @@ import SwiftUI
 struct GameView: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
-        Text("Hello, Hello!")
+        VStack {
+            Text("Hello, Hello!")
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button("Ende Game") {
+                    dismiss()
+                }
+                .buttonStyle(.bordered)
+            }
+        }
+        .navigationTitle("Tik-Tak-Toe")
+        .inNavigationStack()
+        
     }
 }
 
