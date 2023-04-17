@@ -23,7 +23,7 @@ struct StartView: View {
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 10, style: .continuous).stroke(lineWidth: 2))
-            .accentColor(.primary)
+            //.accentColor(.primary)
             Text(gameType.description).padding()
             VStack {
                 switch gameType {
